@@ -1,5 +1,5 @@
-import logging
-
+from config import *
+# from handlers import *
 
 class EmojiLogger(logging.Logger):
     def __init__(self, name, level=logging.DEBUG):
@@ -28,10 +28,10 @@ logger = EmojiLogger(__name__)
 # ----- HOW TO USE ------
 
 # from logger import logger
-#
-# logger.debug("Debug message")
-# logger.info("Info message")
-# logger.warning("Warning message")
-# logger.error("Error message")
-# logger.critical("Critical message")
-# logger.creating("Creating message")
+
+logger.debug("Debug message")
+logger.info("Info message")
+logger.warning("Warning message")
+logger.error("Error message")
+logger.critical("Critical message")
+logger.creating("Creating message")
